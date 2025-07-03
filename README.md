@@ -22,7 +22,7 @@ rxjs: 7.8.2
 typescript: 5.3.3  
 zone.js: 0.15.1
 
----
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
 
 ## Development server
 

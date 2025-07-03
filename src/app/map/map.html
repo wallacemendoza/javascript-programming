@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<div style="display: flex; gap: 2rem;">
+  <!-- Left: Dynamic SVG Map -->
+  <div style="flex: 1;" id="svg-container"></div>
+
+  <!-- Right: Country Info -->
+  <div style="flex: 1;">
+    <div *ngIf="countryData && countryData[1]">
+      <h2>Country Info</h2>
+      <p><strong>Name:</strong> {{ countryData[1][0].name }}</p>
+      <p><strong>Region:</strong> {{ countryData[1][0].region.value }}</p>
+      <p><strong>Income Level:</strong> {{ countryData[1][0].incomeLevel.value }}</p>
+      <p><strong>Capital City:</strong> {{ countryData[1][0].capitalCity }}</p>
+    </div>
+
+    <div *ngIf="!countryData">
+      <p>Loading country info...</p>
+    </div>
+  </div>
+</div>
